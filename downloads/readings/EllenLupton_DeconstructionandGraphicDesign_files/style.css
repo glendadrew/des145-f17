@@ -1,0 +1,863 @@
+/*  
+Theme Name: Lupton
+Theme URI: http://elupton.com/
+Description: Grid aligned WordPress theme
+Version: 1.1
+Author: Derek Punsalan
+Author URI: http://5thirtyone.com/
+Tags: white, grid, whitespace, minimal, clean, widgets
+
+Grid Focus was designed and coded by Derek Punsalan. Find
+more info about the guy at http://5hthirtyone.com
+
+*/
+
+* {margin:0;padding:0;}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;
+font-variant: normal;
+}
+
+ol, ul {
+list-style: none;
+}
+
+blockquote, q {
+quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+}
+
+/* remember to define focus styles! */
+
+:focus {
+outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+
+ins {
+text-decoration: none;
+}
+
+del {
+text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+body {
+font-size: 62.5%;
+line-height:100%;
+}
+
+.clear {
+clear:both;
+}
+
+br {
+height:0;
+}
+
+/* links & anchors
+----------------------------------------------- */
+
+a {
+text-decoration:none;
+}
+
+a:hover {
+color:#454545;
+text-decoration:none;
+}
+
+a img, img {
+background:none;
+border:none;
+-webkit-box-shadow:1px 1px 3px #aaa;
+-moz-box-shadow:1px 1px 3px #aaa;
+}
+
+/* typography
+----------------------------------------------- */
+
+p, li {
+font-family: "Fedra Serif A Pro Book", "Georgia", serif;
+font-size:11px;
+line-height:20px;
+color:#333;
+}
+
+p {
+margin:0 0 10px 0;
+}
+
+em, i, cite {
+font-family: "Fedra Serif A Pro Book Italic", "Georgia", serif;
+}
+
+strong {
+font-family: "Fedra Serif A Pro Demi", "Georgia", serif;
+}
+
+
+
+/* headings
+----------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+font-size:12px;
+line-height:20px;
+color:#666666;
+font-family: "Fedra Serif B Pro Bold", "Georgia", Serif;
+}
+
+/* page colors
+----------------------------------------------- */
+
+body#home a {
+color:rgb(197, 65, 0);
+}
+
+body#about a {
+color:#9f3201;
+}
+
+body#paintings a {
+color:#c54100;
+}
+
+body#writer a {
+color:#328f97;
+}
+
+body#writer ul#nav li a {
+color: #666666;
+}
+
+body#writer h2 a:hover {
+color:#454545;
+text-decoration:none;
+}
+
+
+body#essays a {
+color:#328f97;
+}
+
+body#essays h2 a:hover {
+color:#454545;
+}
+
+body#interviews a {
+color:#328f97;
+}
+
+body#interviews h2 a:hover {
+color:#454545;
+}
+
+body#designer a {
+color:#c54100;
+}
+
+body#designer h2 a:hover {
+color:#454545;
+}
+
+body#designer #logotype h1 a {
+margin-top:29px;
+color: #000000;
+}
+
+body#curator a {
+color:#978a32;
+}
+
+body#curator h2 a:hover {
+color:#454545;
+}
+
+body#curator #logotype h1 a {
+margin-top:55px;
+}
+
+body#critic a {
+color:#75b020;
+}
+
+body#critic h2 a:hover {
+color:#454545;
+}
+
+body#critic  #logotype h1 a {
+margin-top:80px;
+}
+
+
+/* =----------------------------------- main structure */
+
+#wrapper {
+width:940px;
+margin:40px auto;
+}
+
+#masthead {
+width:940px;
+float:left;
+}
+
+#logotype {
+width:120px;
+height:100px;
+float:left;
+}
+
+#logotype h1 a {
+display:block;
+width:135px;
+height:17px;
+margin:5px 0 0 -17px;
+font-size:17px;
+line-height:20px; 
+color: #404040;
+text-align: right;
+}
+
+#logotype h1 a:hover {
+color: #666666;
+}
+
+ul#nav {
+width:80px;
+height:100px;
+float:left;
+margin:4px 0 0 0;
+}
+
+ul#nav li {
+font-size:18px;
+line-height:20px;
+}
+
+ul#nav li a {
+width:80px;
+height:25px;
+display:block;
+font-family: "Fedra Serif B Pro Medium", "Georgia", Serif;
+color: #666666;
+}
+
+ul#nav li a:hover#writer,ul#nav li#current a#writer {
+color:#4d9ea5;
+}
+
+ul#nav li a:hover#designer,ul#nav li#current a#designer {
+color:#c54100;
+}
+
+ul#nav li a:hover#curator,ul#nav li#current a#curator {
+color:#978a32;
+}
+
+ul#nav li a:hover#critic,ul#nav li#current a#critic {
+color:#75b020;
+}
+
+
+/* site intro
+----------------------------------------------- */
+
+#intro {
+position:relative;
+width:478px;
+height:100px;
+margin:0 0 0 20px;
+float:left;
+border-left:1px solid #ddd;
+border-right:1px solid #ddd;
+}
+
+#intro p {
+font-family: "Fedra Serif A Pro Demi", "Georgia", serif;
+width:438px;
+height:100px;
+font-size:11px;
+color: #595959;
+line-height:19px;
+margin-left: 23px; 
+margin-top: 5px;
+border-color: transparent;
+}
+
+#intro a#intro-more {
+font-family: "Fedra Serif B Demi 2", "Georgia", Serif;
+font-size: 10px;
+color: #8c8c8c;
+bottom:8px;
+right:105px;
+width:61px;
+height:10px;
+}
+
+#intro a#intro-more:hover {
+color:#696969;
+}
+
+/* home page modules
+----------------------------------------------- */
+
+#home p.more {
+margin:10px 0 0 0;
+}
+
+#book-module {
+float:left;
+clear:both;
+margin:20px 0 0 0;
+padding:0;
+}
+
+#book-module h3 {
+width:100px;
+height:20px;
+float:left;
+}
+
+#book-module .content {
+width:480px;
+float:right;
+}
+
+ul#books {
+}
+
+ul#books li:first-child {
+margin:0;
+}
+
+ul#books li {
+float:left;
+margin-left:13px;
+}
+
+ul#books li a img {
+width:110px;
+height:130px;
+float:left;
+}
+
+/* video feature
+----------------------------------------------- */
+
+#feature-module {
+float:left;
+clear:both;
+margin:20px 0 0 0;
+padding:20px 0 0 0;
+border-top:1px solid #ddd;
+}
+
+#feature-module h3 {
+width:100px;
+height:20px;
+float:left;
+}
+
+#feature-module .content {
+width:480px;
+float:right;
+}
+
+object {
+display:block;
+margin-bottom:12px;
+}
+
+/* illustration module
+----------------------------------------------- */
+
+#illustration-module {
+float:left;
+clear:both;
+margin:20px 0 0 0;
+padding:20px 0 0 0;
+border-top:1px solid #ddd;
+}
+
+#illustration-module h3 {
+width:100px;
+height:20px;
+float:left;
+}
+
+#illustration-module .content {
+width:480px;
+float:right;
+}
+
+ul#illustrations {
+}
+
+ul#illustrations li:first-child {
+margin:0;
+}
+
+ul#illustrations li {
+float:left;
+margin-left:13px;
+}
+
+ul#illustrations li a img {
+width:110px;
+height:130px;
+float:left;
+}
+
+p.more {
+float:right;
+font-size:10px;
+text-transform:uppercase;
+text-align:right;
+letter-spacing:1px;
+}
+
+/* Main Column ---------------------------------*/
+
+#mainColumn {
+width:580px;
+float:left;
+margin-left:120px;
+margin-top:20px;
+padding-bottom:20px;
+border-top:1px solid #ddd;
+}
+
+#mainColumn h3 {
+font-family: "Fedra Serif B Demi 2", "Georgia", Serif;
+font-size: 12px;
+line-height: 5px;
+color: #666666
+}
+
+#sub-nav {
+width:100%;
+height:20px;
+float:left;
+}
+
+#sub-nav ul {
+float:left;
+height:20px;
+}
+
+#sub-nav li {
+float:left;
+height:20px;
+margin-right:20px;
+font-family: "Fedra Serif B Demi 2", "Georgia", Serif;
+}
+
+#sub-nav li a {
+display:block;
+height:20px;
+float:left;
+font-size:12px;
+line-height:20px;
+color: #666666;
+}
+
+#sub-nav li a#books:hover,#sub-nav li a#books.active {
+color:#4d9ea5;
+}
+
+#sub-nav li a#essays:hover, #sub-nav li a#essays.active {
+color:#4d9ea5;
+}
+
+#sub-nav li a#interviews:hover, #sub-nav li a#interviews.active {
+color:#4d9ea5;
+}
+
+#sub-nav #search {
+float:right;
+display:none;
+}
+
+#search input {
+height:14px;
+margin:2px 0;
+padding:1px;
+color:#787878;
+font-size:12px;
+line-height:14px;
+background:#eee;
+border:none;
+}
+
+
+
+/* Page Section ---------------------------------*/
+
+.post h2, .post h2 a {
+margin:0 0 5px 0;
+}
+
+#mainColumn.single {
+}
+
+#mainColumn.single a {
+color:#9f3201;
+}
+
+#mainColumn.single a:hover {
+color:#000;
+}
+
+#mainColumn.single .post h2 {
+color:#9f3201;
+}
+
+#mainColumn.single .post {
+padding:20px 0 0 0;
+}
+
+#mainColumn.single .post p {
+margin:0 0 10px 0;
+}
+
+#mainColumn.single .post img.thumbnail {
+display:none;
+}
+
+
+
+/* W R I T E R + B O O K S */
+
+#writer div.post {
+position:relative;
+width:100%;
+float:left;
+clear:both;
+padding:20px 0;
+border-top:1px solid #ddd;
+}
+
+#writer div.post img {
+float:left;
+margin:0 20px 0 0;
+}
+
+#writer div.post p {
+margin:0;
+}
+
+#writer div.post p a.more-buy,
+#writer div.post p a.more-link {
+font-family: "Fedra Serif A Pro Book Italic", "Georgia", serif;
+}
+
+
+/* E S S A Y S */
+
+#essays div.post {
+position:relative;
+width:100%;
+float:left;
+clear:both;
+padding:20px 0;
+border-top:1px solid #ddd;
+}
+
+#essays div.post p {
+margin:0;
+background:;
+}
+
+
+#essays div.post p.serif {
+color:inherit;
+font-family: "Fedra Serif A Pro Book Italic", "Georgia", serif;
+}
+
+
+
+/* I N T E R V I E W S */
+
+#interviews div.post {
+position:relative;
+width:100%;
+float:left;
+clear:both;
+padding:20px 0;
+border-top:1px solid #ddd;
+}
+
+#interviews div.post p {
+margin:0;
+}
+
+
+#interviews div.post p.serif {
+font-family: "Fedra Serif A Pro Book Italic", "Georgia", serif;
+color:inherit;
+}
+
+
+
+/* D E S I G N E R */
+
+#designer #projects {
+}
+
+#designer #projects div.project-preview {
+width:173px;
+float:left;
+margin:10px;
+}
+
+#designer #projects div.project-preview h2,
+#designer #projects div.project-preview h2 a {
+margin:0 0 5px 0;
+}
+
+#designer #projects div.project-preview  p {
+margin:0;
+}
+
+#designer #projects div.project-preview  a.more-link {
+display:none;
+color:inherit;
+}
+
+
+
+/* C U R A T O R */
+
+#curator #projects {
+background:orange;
+}
+
+#curator #projects div.project-preview {
+width:173px;
+float:left;
+margin:10px;
+}
+
+#curator #projects div.project-preview h2,
+#curator #projects div.project-preview h2 a {
+margin:0 0 5px 0;
+}
+
+#curator #projects div.project-preview  p {
+margin:0;
+}
+
+#curator #projects div.project-preview  a.more-link {
+color:inherit;
+display:none;
+}
+
+
+
+/* C R I T I C */
+
+#mainColumn.critic {
+border:none;
+}
+
+#critic .post {
+position:relative;
+width:100%;
+float:left;
+clear:both;
+padding:20px 0;
+border-top:1px solid #ddd;
+}
+
+#critic div.post p a.more-link {
+color:inherit;
+font-family: "Fedra Serif A Pro Book Italic", "Georgia", serif;
+}
+
+#critic div.post p.serif {
+color:inherit;
+font-family: "Fedra Serif A Pro Book Italic", "Georgia", serif;
+}
+
+
+/* P A I N T I N G S */
+
+#paintings #projects {
+}
+
+#paintings #projects div.project-preview {
+width:173px;
+float:left;
+margin:10px;
+}
+
+#paintings #projects div.project-preview h2,
+#paintings #projects div.project-preview h2 a {
+margin:0 0 5px 0;
+}
+
+#paintings #projects div.project-preview  p {
+margin:0;
+}
+
+#paintings #projects div.project-preview  a.more-link {
+display:none;
+color:inherit;
+}
+
+
+/* V I D E O S */
+
+#mainColumn.videos {
+border:none;
+}
+
+#video-posts {
+}
+
+#video-posts .post {
+padding:20px 0 10px 0;
+border-top:1px solid #ccc;
+}
+
+
+/* A B O U T */
+
+#about .post {
+position:relative;
+width:100%;
+float:left;
+clear:both;
+padding:20px 0;
+}
+
+#about div.post p a.more-link {
+color:inherit;
+font-family: "Fedra Serif A Pro Book Italic", "Georgia", serif;
+}
+
+#about div.post p.serif {
+color:inherit;
+font-family: "Fedra Serif A Pro Book Italic", "Georgia", serif;
+}
+
+
+/* Sidebars ---------------------------------*/
+
+div.secondaryColumn {
+width:200px;
+float:right;
+margin-top:41px;
+margin-left:40px;
+}
+
+div.widgetContainer {
+display:block;
+margin:0 0 40px 0;
+}
+
+div.widgetContainer li {
+font-size:11px;
+line-height:22px;
+color:#333;
+}
+
+.secondaryColumn h3 {
+margin:0 0 5px 0;
+color: #666666;
+}
+
+.secondaryColumn h3 a {
+color: #666666;
+}
+
+.widgetContainer {}
+
+.widgetContainer ul li {}
+
+.widgetContainer ul li a:hover {
+color:#333;
+}
+
+
+
+.widgetContainer #twitter-1 {}
+
+.widgetContainer #twitter-1 .widget_twitter {
+line-height:17px;
+}
+
+#twitter-1  ul.twitter {
+line-height:18px;
+}
+
+#twitter-1  ul.twitter li.twitter-item {
+padding:5px 0;
+line-height:19px;
+border-top:1px solid #ddd;
+}
+
+#twitter-1  ul.twitter li:first-child {
+padding:0 0 5px 0;
+border-top:none;
+}
+
+#twitter-1  ul.twitter li:hover {
+color:#333;
+}
+
+#twitter-1 h3 a {
+color:#666666;
+}
+
+/* Footer ---------------------------------*/
+
+#footer {width:940px;float:left;clear:both;padding:20px 0;border-top:1px solid #ddd;}
+
+#footer p {
+color:#666;
+font-size:12px;
+}
+
+#footer p a {
+color:inherit;
+}
+
+#footer p.copyright {
+float:left;
+font-size: 10px;
+}
+
+#footer p.credit {width:200px;float:right;margin-right:0;}
